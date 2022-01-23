@@ -16,8 +16,8 @@
 
 <body>
     <?php 
-//      ini_set ('display_errors', 1);
-//  error_reporting (E_ALL | E_STRICT);
+     ini_set ('display_errors', 1);
+ error_reporting (E_ALL | E_STRICT);
     session_start();
     $response = json_decode($_SESSION['response']);
     foreach($response as $resp){
