@@ -30,6 +30,6 @@ if ($err) {
 	echo "cURL Error #:" . $err;
 } else {
 	//echo $response;
-	$_SESSION['response'] = $response;
-	header('Location:result.php');
+	//$_SESSION['response'] = $response;
+	header('Location:result.php?response='.$response);
 }

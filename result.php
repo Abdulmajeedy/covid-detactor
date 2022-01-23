@@ -19,7 +19,7 @@
      ini_set ('display_errors', 1);
  error_reporting (E_ALL | E_STRICT);
     session_start();
-    $response = json_decode($_SESSION['response']);
+    $response = json_decode($_REQUEST['response']);
     foreach($response as $resp){
 
         $country = $resp->country;
@@ -27,8 +27,7 @@
         $dead = $resp->deaths;
         $critical = $resp->critical;
         $confirmed = $resp->country;
-        $country = $resp->country;
-        $country = $resp->country;
+       
 
     }
 
