@@ -46,6 +46,10 @@
                         <p>Patient Confirmed: <span class="badge bg-warning"><?php echo $confirmed;?></span>
                         <p> Critical Patient: <span class="badge bg-warning"><?php echo $critical;?></span>
                         <p>Deaths: <span class="badge bg-danger"><?php echo $dead;?></span>
+                        <p>Tota Patient Confirmed: <span
+                                class="badge bg-secondary"><?php echo $confirmed+$recovered+$critical+$dead;?>
+                            </span>
+
                             </h2>
 
 
