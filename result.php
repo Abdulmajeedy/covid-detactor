@@ -16,8 +16,8 @@
 
 <body>
     <?php 
-     ini_set ('display_errors', 1);
- error_reporting (E_ALL | E_STRICT);
+//      ini_set ('display_errors', 1);
+//  error_reporting (E_ALL | E_STRICT);
     $response = json_decode($_REQUEST['response']);
     foreach($response as $resp){
 
@@ -25,7 +25,7 @@
         $recovered = $resp->recovered;
         $dead = $resp->deaths;
         $critical = $resp->critical;
-        $confirmed = $resp->country;
+        $confirmed = $resp->confirmed;
        
 
     }
@@ -44,6 +44,7 @@
                     <h4>
                         <p>Patient Recovered: <span class="badge bg-success"><?php echo $recovered;?></span>
                         <p>Patient Confirmed: <span class="badge bg-warning"><?php echo $confirmed;?></span>
+                        <p> Critical Patient: <span class="badge bg-warning"><?php echo $critical;?></span>
                         <p>Deaths: <span class="badge bg-danger"><?php echo $dead;?></span>
                             </h2>
 
